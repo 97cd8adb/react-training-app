@@ -32,12 +32,8 @@ const LogoutPage = () =>
   const App = () => {
     return (
       <Router>
-        <nav style={
-          { padding: '10px', backgroundColor: '#f0f0f0' }
-          }>
-          <ul style={
-            { listStyle: 'none', padding: 0, display: 'flex', gap: '15px' }
-            }>
+        <nav style={{ padding: '10px', backgroundColor: '#f0f0f0' }}>
+          <ul style={{ listStyle: 'none', padding: 0, display: 'flex', gap: '15px' }}>
             <li><Link to="/register">登録</Link></li>
             <li><Link to="/login">ログイン</Link></li>
             <li><Link to="/dashboard">ダッシュボード</Link></li>
@@ -45,7 +41,7 @@ const LogoutPage = () =>
             <li><Link to="/logout">ログアウト</Link></li>
           </ul>
         </nav>
-        <div style={{ padding: '20px' }}>
+        <div>
           <Routes>
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
