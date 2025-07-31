@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // リダイレクト用
 import { createUserWithEmailAndPassword } from 'firebase/auth'; // Firebaseユーザー登録関数
-import { auth, db } from '../firebaseConfig'; // ★Firebase authとdbインスタンスをインポート
+import { auth, db } from '../FirebaseConfig.js'; // ★Firebase authとdbインスタンスをインポート
 import { doc, setDoc } from 'firebase/firestore'; // Firestoreにデータを保存する関数
 
 function RegisterPage() {

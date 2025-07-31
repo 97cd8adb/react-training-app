@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
-import './App.css'; // グローバルCSS（必要に応じて）
+import './App.css';
 
 // ★認証コンテキストのカスタムフックをインポート
 import { useAuth } from './contexts/AuthContext.jsx';
@@ -8,7 +8,7 @@ import { useAuth } from './contexts/AuthContext.jsx';
 // ★各ページコンポーネントをインポート
 import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
-import DashboardPage from './pages/DashboardPage.jsx';
+import DashboardPage from './pages/Dashboardpage.jsx';
 import SettingsPage from './pages/SettingsPage.jsx';
 import LogoutButton from './pages/LogoutButton.jsx'; // ログアウトボタンをインポート
 

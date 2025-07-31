@@ -1,13 +1,12 @@
 import React from 'react';
-import { signOut } from 'firebase/auth'; // Firebaseログアウト関数
-import { auth } from '../firebaseConfig'; // ★Firebase authインスタンスをインポート
+import { signOut } from 'firebase/auth';
+import { auth } from '../FirebaseConfig.js';
 
 function LogoutButton() {
   const handleLogout = async () => {
     try {
-      await signOut(auth); // Firebaseからログアウト
-      // ログアウト後のリダイレクトはAuthContextが自動で処理します。
-      alert("ログアウトしました！"); // ログアウトの確認メッセージ
+      await signOut(auth);
+      alert("ログアウトしました！");
     } catch (error) {
       console.error("ログアウトエラー:", error);
       alert("ログアウトに失敗しました。");

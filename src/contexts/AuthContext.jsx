@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { onAuthStateChanged } from 'firebase/auth'; // Firebaseの認証状態監視関数をインポート
-import { auth } from '../firebaseConfig'; // ★作成したfirebaseConfigからauthをインポート
+import { auth } from '../FirebaseConfig.js'; // ★作成したfirebaseConfigからauthをインポート
 
 // 認証情報を提供するコンテキストを作成
 export const AuthContext = createContext(null);

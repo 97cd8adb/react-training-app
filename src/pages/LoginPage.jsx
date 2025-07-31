@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // リダイレクト用
 import { signInWithEmailAndPassword } from 'firebase/auth'; // Firebaseログイン関数
-import { auth } from '../firebaseConfig'; // ★Firebase authインスタンスをインポート
+import { auth } from '../FirebaseConfig.js'; // ★Firebase authインスタンスをインポート
 
 function LoginPage() {
   const [email, setEmail] = useState('');
