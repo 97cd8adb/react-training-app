@@ -8,7 +8,7 @@ import { useAuth } from './contexts/AuthContext.jsx';
 // ★各ページコンポーネントをインポート
 import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
-import DashboardPage from './pages/Dashboardpage.jsx';
+import DashboardPage from './pages/DashboardPage.jsx';
 import SettingsPage from './pages/SettingsPage.jsx';
 import LogoutButton from './pages/LogoutButton.jsx'; // ログアウトボタンをインポート
 
