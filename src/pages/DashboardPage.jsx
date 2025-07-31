@@ -28,8 +28,18 @@ const DashboardPage = () => {
           </div>
         </div>
         <div>
-          <label htmlFor="trainedParts">行った部位:</label>
-          <input type="text" id="trainedParts" name="trainedParts" placeholder="例: 肩・腕" />
+          <div>行った部位:</div>
+          <select multiple>
+            <option value="">--選択してください--</option>
+            <option value="肩">肩</option>
+            <option value="胸">胸</option>
+            <option value="背中">背中</option>
+            <option value="腕">腕</option>
+            <option value="脚">脚</option>
+            <option value="腹">腹</option>
+            <option value="有酸素">有酸素</option>
+            <option value="その他">その他</option>
+          </select>
         </div>
 
         {/* --- 個々のトレーニング種目入力エリア --- */}
