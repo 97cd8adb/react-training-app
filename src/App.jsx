@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom'
 
+//各ページの定義と文字を設定
 const LoginPage = () => 
   <div>
     <h2>ログイン</h2>
     <p>ログインフォームをここに作ります。</p>
   </div>;
-
 const DashboardPage = () =>
   <div>
     <h2>ダッシュボード</h2>
@@ -18,13 +18,11 @@ const SettingsPage = () =>
     <h2>設定</h2>
     <p>各種設定を行う画面です。</p>
   </div>;
-
 const RegisterPage = () =>
   <div>
     <h2>ユーザー登録</h2>
     <p>新規ユーザー登録フォームをここに作ります。</p>
   </div>;
-
 const LogoutPage = () =>
   <div>
     <h2>ログアウト</h2>
