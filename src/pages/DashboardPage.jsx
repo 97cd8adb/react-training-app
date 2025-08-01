@@ -28,7 +28,7 @@ const DashboardPage = () => {
           </div>
         </div>
         <div>
-          <div>行った部位:</div>
+          <div>行った部位</div>
           <select multiple>
             <option value="">--選択してください--</option>
             <option value="肩">肩</option>
